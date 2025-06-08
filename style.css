@@ -1,0 +1,104 @@
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #f7fafc;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: #ffd600;
+    padding: 1em 0 0.5em 0;
+}
+
+.logo {
+    height: 48px;
+    margin-bottom: 0.5em;
+}
+
+.mission {
+    color: #222;
+    margin: 0.5em 0 1em 0;
+}
+
+.game-info {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    font-size: 1.2em;
+    margin: 1em 0;
+}
+
+#game-area {
+    position: relative;
+    margin: 0 auto;
+    background: #e3f6fd;
+    border: 3px solid #ffd600;
+    border-radius: 16px;
+    width: 320px;
+    height: 480px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.water-drop, .pollutant-drop {
+    position: absolute;
+    width: 36px;
+    height: 48px;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.1s;
+}
+
+.water-drop {
+    background: #00adef;
+    border-radius: 50% 50% 60% 60% / 60% 60% 100% 100%;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 8px rgba(0,173,239,0.2);
+}
+
+.pollutant-drop {
+    background: #888;
+    border-radius: 50% 50% 60% 60% / 60% 60% 100% 100%;
+    border: 2px solid #333;
+    box-shadow: 0 2px 8px rgba(80,80,80,0.2);
+}
+
+#feedback {
+    min-height: 2em;
+    font-size: 1.2em;
+    margin: 1em 0;
+    color: #ffd600;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #222;
+}
+
+#start-btn {
+    background: #ffd600;
+    color: #222;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8em 2em;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 1em 0;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#start-btn:hover {
+    background: #ffe066;
+}
+
+footer {
+    margin-top: 2em;
+    font-size: 1em;
+    color: #888;
+}
+
+footer a {
+    color: #00adef;
+    text-decoration: none;
+    font-weight: bold;
+}
